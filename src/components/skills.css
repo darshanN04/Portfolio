@@ -1,0 +1,65 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.skills-heading{
+    padding-left: 44%;
+    
+}
+
+@keyframes slideit {
+    from{
+        transform: translateX(from);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+.logos{
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap; 
+    position: relative;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 20px 20px 0px white;
+    width: 70%;
+    margin: 10%;
+    margin-left: 15%;
+    animation-play-state: paused;
+}
+.logos:before, 
+.logos:after{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.logos:before{
+    left: 0;
+    background: linear-gradient(to left, transparent, black ) ;
+    
+}
+.logos:after{
+    right: 0;
+    background: linear-gradient(to right, transparent, black ) ;
+    
+}
+.logo-slides{
+    display: inline-block; 
+    animation: slideit 25s linear infinite;
+    animation-play-state: paused;
+}
+.logos:hover .logo-slides{
+    animation-play-state: running;
+}
+.logo{
+    width: 80px;
+    margin-right: 90px;
+    margin-left: 90px;
+}

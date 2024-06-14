@@ -1,0 +1,342 @@
+
+*{
+    scroll-behavior: smooth;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.whole{
+    background-color: black;
+}
+.backpic{
+    height: 100vh;
+    width: 100%;
+}
+h1{
+    background-image:linear-gradient(0deg, rgb(246, 17, 219), #00BFFF, rgba(181, 243, 12, 0.651));
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+.whole-nav {
+    backdrop-filter: blur(2px);
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3vh 2vw 3vh 3vh;
+    font-size: 20px;
+    position: fixed; 
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+.connect-but{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.left-nav{
+    padding:10px;
+    font-weight: 900;
+}
+.right-nav{
+    gap: 30px; 
+    display: flex;
+    justify-content: space-between;
+}
+.about-nav, .skills-nav, .projects-nav{
+    padding: 10px;
+    
+}
+.about-nav:hover, .skills-nav:hover, .projects-nav:hover {
+    cursor: pointer;
+}
+.center-content {
+    background-image: url(back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.myname1{
+    background-image:linear-gradient(to right, rgb(255, 0, 225), #51d3ff, rgba(200, 255, 50, 0.651));
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 800;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    font-size: 50px;
+}
+.smalldesc{
+    background-image: linear-gradient(to right, rgb(201, 255, 39), #ffffff, white);
+    font-size: 20px;
+    font-weight: 600;
+    background-clip: text;
+    color: transparent;
+}
+.mypic {
+    width: 200px;
+    margin-right: 2em;
+    margin-left: 70px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 15px white;
+}
+
+
+.projects {
+    margin-top: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.containerStyle {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgb(1, 190, 248);
+}
+
+.projects-sub{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.gap{
+    height: 50px;
+}
+.contact-part{
+    background-color: black;
+    height: auto;
+    padding: 30px;
+    padding-top: 150px;
+    padding-left: 50px;
+}
+.pic1{
+    width:400px;
+    margin-left: 30%;
+}
+.pic {
+    display: flex;
+    width: 550px;
+    height: 100px;
+    margin-top: 140px;
+
+}
+.contact-form {
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 80px ;
+}
+.contact-innerpart{
+    display: flex;
+}
+.line1{
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 10px 62px;
+    gap: 10px;
+}
+.CI1, .CI2{ 
+    width: 36%;  
+    height: 25px;
+}
+.line2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px 10px 30px;
+
+}
+
+
+.CI3{
+    height: 25px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+.CI4{
+    margin-bottom: 10px;
+    width: 80%;
+    height: 200px;
+}
+.CIsubmit {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    top: 0;
+    width: 150px;
+    height: 50px;
+    margin-left: 35%;
+    font-size: 16px;
+  }
+  .CI1, .CI2, .CI3, .CI4{
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid black;   
+    box-shadow: 6px 5px 0px #007BFF;
+  }
+
+.CIsubmit:hover {
+  background-color: #0056b3;
+  box-shadow: 0 8px #003d7a;
+  transform: translateY(-2px);
+}
+
+.CIsubmit:active {
+  box-shadow: 0 5px #003d7a;
+  transform: translateY(3px);
+}
+
+  
+  .separator {
+    height: 1px;
+    width: 72%;
+    margin-top: 60px;
+    background: linear-gradient(-45deg, grey, red, grey);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+    border: none;
+  }
+/*Footer*/
+.wholefooter{
+    height: 200px;
+    display: flex;
+    
+}
+.col1{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 120px;
+    margin-left: 23%;
+    margin-right: 50px;
+}
+.above-symbols {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: 900;
+  }
+.symbols a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 23px;
+    color: #0ef;
+    margin: 30px 15px 30px 0;
+}
+.symbols a:hover{
+    background: #0ef;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0 0 10px #0ef;
+}
+.separator2 {
+    width: 1px;
+    background-color: white; 
+    height: 80%;
+    align-self: center;
+    margin: 0 40px 0 40px;
+  }
+.col2{
+    padding-top: 20px;
+    margin-left: 50px;
+}
+.col2 a{
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+
+}
+.col2 .l1, .col2 .l2, .col2 .l3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+span{
+    color: white;
+}
+
+
+/*responsive*/
+@media (max-width: 900px) {
+    .nav-whole {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .mypic{
+        margin: 30px;
+    }
+    .center-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-innerpart {
+      flex-direction: column;
+      align-items: center;
+    }
+    .col1{
+        align-items: center;
+        margin-left: -10%;
+    }
+    .wholefooter{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+    .pic{
+        margin-right: 100px;
+    }
+}
