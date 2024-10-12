@@ -14,7 +14,7 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (!isValidNumber(form.current.from_phone.value)) {
+    if (form.current.from_phone.value.length !== 0 && !isValidNumber(form.current.from_phone.value)) {
       toast.error('Phone number is not a valid 10-digit number');
       return;
     }
@@ -43,7 +43,7 @@ export const Contact = () => {
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className='line1'>
               <input type="text" name="from_name" className="CI1" placeholder='Your Name' required/>
-              <input type="tel" name="from_phone" className="CI2" placeholder='Phone No.' required></input>
+              <input type="tel" name="from_phone" className="CI2" placeholder='Phone No.(Optional)'></input>
             
           </div>
           <div className='line2'>

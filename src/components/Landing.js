@@ -17,11 +17,19 @@ import Typed from 'typed.js';
 import login from '../assets/img/login.png';
 import signup from '../assets/img/signup.png';
 import landing from '../assets/img/landing.png';
+import s1 from '../assets/img/s1.png';
+import s2 from '../assets/img/s2.png';
+import s3 from '../assets/img/s3.png';
+import s4 from '../assets/img/s4.png';
+import s5 from '../assets/img/s5.png';
+import s6 from '../assets/img/s6.png';
+import s7 from '../assets/img/s7.png';
+
 
 
 
 const Landing = () => {
-    window.onscroll = function() {
+  window.onscroll = function() {
       var nav = document.querySelector('.whole-nav');
       if (window.pageYOffset > 50) {
           nav.style.padding = '1vh 1vw 1vh 1vh'; 
@@ -56,6 +64,15 @@ const Landing = () => {
     {url: form1, title: 'form1', description: 'This is a form page'},
     {url: form2, title: 'form1', description: 'This is a form page'},
   ];
+  const slides3 = [
+    {url: s1, title: 's1', description: 'This is a s1 page'},
+    {url: s2, title: 's2', description: 'This is a s2 page'},
+    {url: s3, title: 's3', description: 'This is a s3 page'},
+    {url: s4, title: 's4', description: 'This is a s4 page'},
+    {url: s5, title: 's5', description: 'This is a s5 page'},
+    {url: s6, title: 's6', description: 'This is a s6 page'},
+    {url: s7, title: 's7', description: 'This is a s7 page'},
+  ];
   const containerStyle = {
     width: '40vw',
     height: '50vh',
@@ -65,16 +82,16 @@ const Landing = () => {
 
   };
   const handleSkillsClick = () => {
-    window.scrollTo(0, 800);
+    window.scrollTo(0, 850);
   }
   const connectpart = () => {
-    window.scrollTo(0, 2750);
+    window.scrollTo(0, 3750);
   }
   const aboutme = () => {
     window.scrollTo(0, 0);
   }
   const handleProjectsClick = () => {
-    window.scrollTo(0, 1450);
+    window.scrollTo(0, 1580);
   }
 
   smoothscroll.polyfill();
@@ -111,6 +128,13 @@ const Landing = () => {
       <div style={containerStyle} className='containerStyle'>
         <ImageSlider slides={slides} className='container1'/>
       </div>
+
+      <p class="projects-sub">3. Suggesto</p>
+      <p class="projects-sub">(This project is a web application where users can anonymously share their thoughts, opinions, and messages based on a specific place and type.)</p>
+      <div style={containerStyle} className='containerStyle'>
+        <ImageSlider slides={slides3} className='container1'/>
+      </div>
+      
       
       <Contact />
       <hr class="separator"></hr>
