@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderStyles = {
-    width: "100%",
+    width: "103%",
     height: '100%',
     position: 'relative',
     backgroundSize: "cover",

@@ -135,9 +135,10 @@ h1{
 .contact-part{
     background-color: black;
     height: auto;
-    padding: 30px;
     padding-top: 150px;
-    padding-left: 80px;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
 }
 .pic1{
     width:400px;
@@ -220,7 +221,7 @@ h1{
 
   
   .separator {
-    height: 1px;
+    height: 3px;
     width: 72%;
     margin-top: 60px;
     background: linear-gradient(-45deg, grey, red, grey);
